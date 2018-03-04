@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+/* RESET */
+body, ul, p, h1, h2, h3, h4, h5, h6{ margin: 0; padding: 0; font-family: "Roboto", sans-serif; }
+
+/* SHARED */
+.content-width { width: 1024px; }
+.centered { margin: 0 auto; }
+.flex-row { display: flex; flex-direction: row; }
+.flex-col { display: flex; flex-direction: column; }
+.thin-text { font-weight: 100; }
+
+/* HEADER */
+header{ height: 73px; border-bottom: 1px solid black; }
+header .ctn { height: 100%; justify-content: space-between; }
+header .logo-ctn { padding: 15px 0 0 0;}
+header nav ul { height: 100%; display: flex; flex-direction: row; }
+header nav li { list-style: none; padding: 25px;}
+header nav a { text-decoration: none; color: #454545; display: block; margin: 0 20px 0 0; height: 100%; }
+header nav a.selected { background-color: black; color:white; }
+
+/* Blog */
+#blog-ctn { padding: 80px 0 0 0; }
+#blog-ctn .entry { margin-bottom: 100px; text-decoration: none; }
+#blog-ctn .entry .hover-triangle { overflow: hidden; width: 0; flex-shrink: 0; transition: all 0.2s ease-out; margin: 0 20px 0 0; }
+#blog-ctn .entry:hover .hover-triangle { width:60px; transition: all 0.2s ease-out; }
+#blog-ctn .entry .hover-triangle svg { margin-top: 20px; }
+#blog-ctn .date-ctn span { text-align: end; }
+#blog-ctn .date-ctn .day { font-size: 50px; line-height: 54px; color: #ea0000; }
+#blog-ctn .date-ctn .month { font-size: 14px; line-height: 14px; }
+#blog-ctn .date-ctn .year { font-size: 14px; }
+#blog-ctn .content { padding-left: 40px; }
+#blog-ctn .content h1 { font-size: 28px; font-weight: 300; }
+#blog-ctn .content p {color: #757575; padding-top: 8px; }
